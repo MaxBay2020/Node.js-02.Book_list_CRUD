@@ -1,5 +1,5 @@
-# COMP229-F2019-MidTerm Test
-
-## Welcome to the MidTerm Project - the Favourite Book List App
-
-please use **`npm install`** to install project dependencies
+# Project: Book List CRUD
+## Instruction:
++ you just need to change the uri of mongodb atlas
++ the uri of mongodb atlas is in server -> config -> db.js file
++ make sure you have changed the uri to yours 
