@@ -1,3 +1,11 @@
+/**
+Project name: Book_list_CRUD_project
+File name: app.js
+Function: app entrance
+Created by: Cong Wang
+Created on: Otc. 27 2020
+**/
+
 // moddules for node and express
 let createError = require('http-errors');
 let express = require('express');
