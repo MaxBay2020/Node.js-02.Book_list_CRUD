@@ -10,6 +10,7 @@
         <div class="alert alert-danger" id="failTip" role="alert" hidden>
             fail
         </div>
+        <h1>Add your favorite book:</h1>
         <div class="form-group">
             <label for="title">
                 Title
@@ -47,8 +48,9 @@
             </input>
         </div>
         <button disabled="disabled" class="btn btn-primary" id="btn" type="submit">
-            Add
+            <i class="fa fa-check-square-o"></i> Add
         </button>
+        <a href="/books" class="btn btn-warning"><i class="fa fa-undo"></i> Cancel</a>
     </div>
     <div class="col-md-4">
     </div>
@@ -102,8 +104,10 @@
             $('#btn').attr('disabled', null)
           }else if(data === '0'){
             $('#failTip').attr('hidden', null).html('book already exists')
+            $('#btn').attr('disabled', 'disabled')
           }else if(data === '-1'){
             $('#failTip').attr('hidden', null).html('server error')
+            $('#btn').attr('disabled', 'disabled')
           }
         }
       })
